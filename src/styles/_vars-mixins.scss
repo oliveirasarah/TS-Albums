@@ -1,0 +1,12 @@
+$dark: #161821;
+$light: #e5f2f1;
+
+@mixin grid($cols) {
+  display: grid;
+  grid-template-columns: repeat($cols, 1fr);
+}
+
+@mixin border() {
+  border: 2px solid $light;
+  border-radius: 5px;
+}

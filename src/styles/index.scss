@@ -1,0 +1,105 @@
+@import "./vars-mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $dark;
+  color: $light;
+  font-family: "Onest", sans-serif;
+}
+
+header {
+  background-image: url("https://www.rollingstone.com/wp-content/uploads/2022/10/taylor-swift-midnights-press.jpg?w=1581&h=1054&crop=1");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100vh;
+  padding: 2rem 2rem 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+
+  h1 {
+    user-select: none;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.table-of-contents {
+  @include grid(2);
+  text-transform: uppercase;
+  font-weight: 500;
+  justify-items: center;
+  grid-gap: 2rem 8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $light;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.pic-credits {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.scroll-top {
+  @include border();
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  user-select: none;
+  cursor: pointer;
+  transition: ease 0.3s;
+
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-of-contents {
+    @include grid(1);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $light;
+}
