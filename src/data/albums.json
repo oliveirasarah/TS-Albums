@@ -3,7 +3,6 @@
     {
       "id": "fearless",
       "title": "Fearless (Taylor's Version)",
-      "releaseYear": "2021",
       "cover": "https://upload.wikimedia.org/wikipedia/en/5/5b/Fearless_%28Taylor%27s_Version%29_%282021_album_cover%29_by_Taylor_Swift.png",
       "songs": [
         "Fearless",
@@ -25,19 +24,20 @@
         "Come In With The Rain",
         "Superstar",
         "The Other Side of the Door",
-        "Today Was A Fairytale",
-        "You All Over Me (feat. Maren Morris) (From The Vault)",
-        "Mr. Perfectly Fine (From The Vault)",
-        "We Were Happy (From The Vault)",
-        "That's When (feat. Keith Urban) (From The Vault)",
-        "Don't You (From The Vault)",
-        "Bye Bye Baby (From The Vault)"
+        "Today Was A Fairytale"
+      ],
+      "vault": [
+        "You All Over Me (feat. Maren Morris)",
+        "Mr. Perfectly Fine",
+        "We Were Happy",
+        "That's When (feat. Keith Urban)",
+        "Don't You",
+        "Bye Bye Baby"
       ]
     },
     {
       "id": "red",
       "title": "Red (Taylor's Version)",
-      "releaseYear": "2021",
       "cover": "https://upload.wikimedia.org/wikipedia/en/4/47/Taylor_Swift_-_Red_%28Taylor%27s_Version%29.png",
       "songs": [
         "State of Grace",
@@ -60,22 +60,23 @@
         "Come Back... Be Here",
         "Girl at Home",
         "State of Grace (acoustic version)",
-        "Ronan",
-        "Better Man (From The Vault)",
-        "Nothing New (featuring Phoebe Bridgers) (From The Vault)",
-        "Babe (From The Vault)",
-        "Message in a Bottle (From The Vault)",
-        "I Bet You Think About Me (featuring Chris Stapleton) (From The Vault)",
-        "Forever Winter (From The Vault)",
-        "Run (feat. Ed Sheeran) (From The Vault)",
-        "The Very First Night (From The Vault)",
-        "All Too Well (10 Minute Version) (From The Vault)"
+        "Ronan"
+      ],
+      "vault": [
+        "Better Man",
+        "Nothing New (featuring Phoebe Bridgers)",
+        "Babe",
+        "Message in a Bottle",
+        "I Bet You Think About Me (featuring Chris Stapleton)",
+        "Forever Winter",
+        "Run (feat. Ed Sheeran)",
+        "The Very First Night",
+        "All Too Well (10 Minute Version)"
       ]
     },
     {
       "id": "nineteen-eighty-nine",
       "title": "1989 (Taylor's Version)",
-      "releaseYear": "2023",
       "cover": "https://m.media-amazon.com/images/I/81JNBy4njYL._UF1000,1000_QL80_.jpg",
       "songs": [
         "Welcome to New York",
@@ -93,18 +94,19 @@
         "Clean",
         "Wonderland",
         "You Are in Love",
-        "New Romantics",
-        "'Slut!' (From The Vault)",
-        "Say Don't Go (From The Vault)",
-        "Now That We Don't Talk (From The Vault)",
-        "Suburban Legends (From The Vault)",
-        "Is It Over Now? (From The Vault)"
+        "New Romantics"
+      ],
+      "vault": [
+        "'Slut!'",
+        "Say Don't Go",
+        "Now That We Don't Talk",
+        "Suburban Legends",
+        "Is It Over Now?"
       ]
     },
     {
       "id": "reputation",
       "title": "Reputation",
-      "releaseYear": "2017",
       "cover": "https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png",
       "songs": [
         "…Ready for It?",
@@ -127,7 +129,6 @@
     {
       "id": "lover",
       "title": "Lover",
-      "releaseYear": "2019",
       "cover": "https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png",
       "songs": [
         "I Forgot That You Existed",
@@ -153,7 +154,6 @@
     {
       "id": "folklore",
       "title": "folklore",
-      "releaseYear": "2020",
       "cover": "https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png",
       "songs": [
         "the 1",
@@ -171,14 +171,13 @@
         "epiphany",
         "betty",
         "peace",
-        "hoax",
-        "the lakes - bonus track"
-      ]
+        "hoax"
+      ],
+      "deluxe": ["the lakes - bonus track"]
     },
     {
       "id": "evermore",
       "title": "evermore",
-      "releaseYear": "2020",
       "cover": "https://upload.wikimedia.org/wikipedia/en/0/0a/Taylor_Swift_-_Evermore.png",
       "songs": [
         "willow",
@@ -195,7 +194,9 @@
         "long story short",
         "marjorie",
         "closure",
-        "evermore (feat. Bon Iver)",
+        "evermore (feat. Bon Iver)"
+      ],
+      "deluxe": [
         "right where you left me - bonus track",
         "it's time to go - bonus track"
       ]
@@ -203,7 +204,6 @@
     {
       "id": "midnights",
       "title": "Midnights",
-      "releaseYear": "2023",
       "cover": "https://i.scdn.co/image/ab67616d00001e02bb54dde68cd23e2a268ae0f5",
       "songs": [
         "Lavender Haze",
@@ -251,7 +251,6 @@
     {
       "id": "midnights-tde",
       "title": "Midnights (The Til Dawn Edition)",
-      "releaseYear": "2023",
       "cover": "https://i.scdn.co/image/ab67616d0000b273fa747621a53c8e2cc436dee0",
       "songs": [
         "Lavender Haze",
@@ -277,6 +276,98 @@
         "Hits Different",
         "Snow On The Beach (feat. More Lana Del Rey)",
         "Karma (feat. Ice Spice)"
+      ]
+    },
+    {
+      "id": "speak-now",
+      "title": "Speak Now (Taylor's Version",
+      "cover": "https://pbs.twimg.com/media/FvaseR_WAAESX1L.jpg:large",
+      "songs": [
+        "Mine",
+        "Sparks Fly",
+        "Back to December",
+        "Speak Now",
+        "Dear John",
+        "Mean",
+        "The Story of Us",
+        "Never Grow Up",
+        "Enchanted",
+        "Better than Revenge",
+        "Innocent",
+        "Haunted",
+        "Last Kiss",
+        "Long Live",
+        "Ours",
+        "Superman"
+      ],
+      "vault": [
+        "Electric Touch (feat. Fall Out Boy)",
+        "When Emma Falls in Love",
+        "I Can See You",
+        "Castles Crumbling (feat. Hayley Williams)",
+        "Foolish One",
+        "Timeless"
+      ]
+    },
+    {
+      "id": "tortured-poets",
+      "title": "THE TORTURED POETS DEPARTMENT",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33",
+      "songs": [
+        "Fortnight (feat. Post Malone)",
+        "The Tortured Poets Department",
+        "My Boy Only Breaks His Favorite Toys",
+        "Down Bad",
+        "So Long, London",
+        "But Daddy I Love Him",
+        "Fresh Out the Slammer",
+        "Florida!!! (featuring Florence and the Machine)",
+        "Guilty as Sin?",
+        "Who's Afraid of Little Old Me?",
+        "I Can Fix Him (No Really I Can)",
+        "loml",
+        "I Can Do It with a Broken Heart",
+        "The Smallest Man Who Ever Lived",
+        "The Alchemy",
+        "Clara Bow"
+      ]
+    },
+    {
+      "id": "tortured-poets-ta",
+      "title": "THE TORTURED POETS DEPARTMENT: THE ANTHOLOGY",
+      "cover": "https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa",
+      "songs": [
+        "Fortnight (feat. Post Malone)",
+        "The Tortured Poets Department",
+        "My Boy Only Breaks His Favorite Toys",
+        "Down Bad",
+        "So Long, London",
+        "But Daddy I Love Him",
+        "Fresh Out the Slammer",
+        "Florida!!! (feat. Florence and the Machine)",
+        "Guilty as Sin?",
+        "Who's Afraid of Little Old Me?",
+        "I Can Fix Him (No Really I Can)",
+        "loml",
+        "I Can Do It With a Broken Heart",
+        "The Smallest Man Who Ever Lived",
+        "The Alchemy",
+        "Clara Bow",
+        "The Black Dog",
+        "imgonnagetyouback",
+        "The Albatross",
+        "Chloe or Sam or Sophia or Marcus",
+        "How Did It End?",
+        "So High School",
+        "I Hate It Here",
+        "thanK you aIMee",
+        "I Look in People's Windows",
+        "The Prophecy",
+        "Cassandra",
+        "Peter",
+        "The Bolter",
+        "Robin",
+        "The Manuscript"
       ]
     }
   ]
