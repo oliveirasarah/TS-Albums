@@ -1,27 +1,22 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 
-import { AlbumProps } from "./types/Album"
 import TableOfContents from "./components/TableOfContents"
 import ScrollTopBtn from "./components/ScrollTopBtn"
 import Album from "./components/Album"
+import data from "./db/albums.json"
+import { AlbumProps } from "./types/Album"
 
 function App() {
   const [showButton, setShowButton] = useState<boolean>(false)
-  const [albums, setAlbums] = useState<AlbumProps[]>([])
   const [headerBg, setHeaderBg] = useState<string>("")
+
+  const albums: AlbumProps[] = data.albums
 
   const renderedAlbums = albums.map((album) => (
     <Album key={album.id} {...album} />
   ))
 
   useEffect(() => {
-    fetch("http://localhost:3000/albums")
-      .then((res) => res.json())
-      .then((json) => setAlbums(json))
-      .catch((err) => console.log("Error", err))
-  }, [])
-
-  useState(() => {
     function toggleScrollBtn() {
       document.documentElement.scrollTop > 100
         ? setShowButton(true)
