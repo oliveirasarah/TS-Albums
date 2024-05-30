@@ -5,9 +5,10 @@ import TableOfContents from "./components/TableOfContents"
 import ScrollTopBtn from "./components/ScrollTopBtn"
 import Album from "./components/Album"
 
-export default function App() {
+function App() {
   const [showButton, setShowButton] = useState<boolean>(false)
   const [albums, setAlbums] = useState<AlbumProps[]>([])
+  const [headerBg, setHeaderBg] = useState<string>("")
 
   const renderedAlbums = albums.map((album) => (
     <Album key={album.id} {...album} />
@@ -32,12 +33,10 @@ export default function App() {
 
   return (
     <>
-      <header>
+      <header className={headerBg}>
         <h1>Albums</h1>
-
-        <TableOfContents albums={albums} />
+        <TableOfContents setHeaderBg={setHeaderBg} albums={albums} />
       </header>
-      <p className="picCredits">Photo credit: Beth Garrabrant</p>
 
       <main className="albums">{renderedAlbums}</main>
 
@@ -45,3 +44,5 @@ export default function App() {
     </>
   )
 }
+
+export default App

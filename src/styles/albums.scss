@@ -1,18 +1,39 @@
-@import "./vars-mixins";
+@import "./utils";
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem;
+}
 
 .album-box {
   display: flex;
   flex-direction: column;
+
   align-items: center;
+  text-align: left;
   gap: 2rem;
+  min-width: 100%;
   padding: 1rem;
+  flex: 1 1 0%;
+  border-radius: 0.5rem;
+
+  @media (width > 1280px) {
+    min-width: 33%;
+  }
 
   > .title {
     padding: 1.5rem 0 0 0;
     font-size: 1.5rem;
   }
 
-  > .releaseYear {
+  > .subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  > .releaseDate {
     font-size: 1.2rem;
   }
 
@@ -25,56 +46,73 @@
   > .songs-list {
     margin-bottom: 1.2rem;
   }
-}
 
-.songs-list {
-  > .songName {
+  > .songs-list > .title {
     padding: 0.5rem;
     list-style: none;
     font-size: 1.3rem;
     margin: 5px;
+    font-weight: 300;
   }
 
-  > .songNumber {
-    font-weight: 500;
+  > .songs-list .number {
+    font-weight: 400;
   }
 }
 
-#fearless {
+.fearless {
   background-color: #cca763;
   color: $dark;
 }
 
-#red {
+.red {
   background-color: #610000;
 }
 
-#nineteen-eighty-nine {
+.nineteen-eighty-nine {
   background-color: #5480a5;
 }
 
-#reputation {
+.reputation {
   background-color: #060606;
 }
 
-#lover {
+.lover {
   background-color: #feb2d3;
   color: $dark;
 }
 
-#folklore {
+.folklore {
   background-color: #3f3f3f;
 }
 
-#evermore {
+.evermore {
   background-color: #261216;
 }
 
-#midnights,
-#midnights-3am {
+.midnights,
+.midnights-3am {
   background-color: #1c1e34;
 }
 
-#midnights-tde {
+.midnights-tde {
   background-color: #12122e;
+}
+
+.speak-now {
+  background-color: #53225b;
+}
+
+.tortured-poets {
+  background-color: #edece8;
+  color: #2c251f;
+
+  > .cover {
+    border: none;
+  }
+}
+
+.tortured-poets-ta {
+  background-color: #302b26;
+  color: #edece8;
 }
