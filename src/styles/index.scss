@@ -53,25 +53,29 @@ header {
   letter-spacing: 0.5px;
   text-align: center;
 
-  a {
+  > .link {
     text-decoration: none;
     color: $light;
   }
 
-  a:hover {
+  > .link:hover {
     text-decoration: underline;
+  }
+
+  @media (width < 768px) {
+    @include grid(1);
   }
 }
 
-.pic-credits {
+.picCredits {
   font-size: 0.9rem;
   padding: 0.5rem;
 }
 
-.scroll-top {
+.scrollTop {
   @include border();
   padding: 0.25rem 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   position: fixed;
   right: 12px;
   bottom: 12px;
@@ -85,15 +89,9 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .table-of-contents {
-    @include grid(1);
-  }
-}
-
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.25rem;
 }
 
 ::-webkit-scrollbar-track {
