@@ -3,14 +3,18 @@ import { useState, useEffect } from "react"
 import TableOfContents from "./components/TableOfContents"
 import ScrollTopBtn from "./components/ScrollTopBtn"
 import Album from "./components/Album"
-import data from "./db/albums.json"
 import { AlbumProps } from "./types/Album"
 
 function App() {
+  const [albums, setAlbums] = useState<AlbumProps[]>([])
   const [showButton, setShowButton] = useState<boolean>(false)
   const [headerBg, setHeaderBg] = useState<string>("")
 
-  const albums: AlbumProps[] = data.albums
+  useEffect(() => {
+    fetch("https://json-data-so.vercel.app/albums")
+      .then((res) => res.json())
+      .then((json) => setAlbums(json))
+  }, [])
 
   const renderedAlbums = albums.map((album) => (
     <Album key={album.id} {...album} />
@@ -25,6 +29,8 @@ function App() {
 
     window.addEventListener("scroll", toggleScrollBtn)
   })
+
+  if (!albums) return <p>Loading...</p>
 
   return (
     <>
